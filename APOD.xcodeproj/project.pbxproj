@@ -11,6 +11,8 @@
 		F022E85627CA8EB30036A59C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022E85527CA8EB30036A59C /* ContentView.swift */; };
 		F022E85827CA8EB50036A59C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F022E85727CA8EB50036A59C /* Assets.xcassets */; };
 		F022E85B27CA8EB50036A59C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F022E85A27CA8EB50036A59C /* Preview Assets.xcassets */; };
+		F022E86627CAC3A40036A59C /* APOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022E86527CAC3A40036A59C /* APOD.swift */; };
+		F022E86827CAC4C70036A59C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022E86727CAC4C70036A59C /* WebService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +21,8 @@
 		F022E85527CA8EB30036A59C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F022E85727CA8EB50036A59C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F022E85A27CA8EB50036A59C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		F022E86527CAC3A40036A59C /* APOD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APOD.swift; sourceTree = "<group>"; };
+		F022E86727CAC4C70036A59C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,9 +55,10 @@
 		F022E85227CA8EB30036A59C /* APODiOS */ = {
 			isa = PBXGroup;
 			children = (
-				F022E85327CA8EB30036A59C /* APODiOSApp.swift */,
-				F022E85527CA8EB30036A59C /* ContentView.swift */,
-				F022E85727CA8EB50036A59C /* Assets.xcassets */,
+				F022E86427CAC3850036A59C /* App */,
+				F022E86327CAC3730036A59C /* View Models */,
+				F022E86227CAC36E0036A59C /* Views */,
+				F022E86127CAC3660036A59C /* Models */,
 				F022E85927CA8EB50036A59C /* Preview Content */,
 			);
 			path = APODiOS;
@@ -65,6 +70,39 @@
 				F022E85A27CA8EB50036A59C /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		F022E86127CAC3660036A59C /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F022E86527CAC3A40036A59C /* APOD.swift */,
+				F022E86727CAC4C70036A59C /* WebService.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F022E86227CAC36E0036A59C /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F022E85527CA8EB30036A59C /* ContentView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		F022E86327CAC3730036A59C /* View Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "View Models";
+			sourceTree = "<group>";
+		};
+		F022E86427CAC3850036A59C /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F022E85327CA8EB30036A59C /* APODiOSApp.swift */,
+				F022E85727CA8EB50036A59C /* Assets.xcassets */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,6 +176,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F022E85627CA8EB30036A59C /* ContentView.swift in Sources */,
+				F022E86627CAC3A40036A59C /* APOD.swift in Sources */,
+				F022E86827CAC4C70036A59C /* WebService.swift in Sources */,
 				F022E85427CA8EB30036A59C /* APODiOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
