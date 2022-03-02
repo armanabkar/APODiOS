@@ -13,6 +13,11 @@
 		F022E85B27CA8EB50036A59C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F022E85A27CA8EB50036A59C /* Preview Assets.xcassets */; };
 		F022E86627CAC3A40036A59C /* APOD.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022E86527CAC3A40036A59C /* APOD.swift */; };
 		F022E86827CAC4C70036A59C /* WebService.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022E86727CAC4C70036A59C /* WebService.swift */; };
+		F022E86A27CC07E40036A59C /* APODViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022E86927CC07E40036A59C /* APODViewModel.swift */; };
+		F022E86D27CC08620036A59C /* Date+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022E86C27CC08620036A59C /* Date+Extension.swift */; };
+		F022E87027CC094A0036A59C /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022E86F27CC094A0036A59C /* Constants.swift */; };
+		F022E87227CD32860036A59C /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022E87127CD32860036A59C /* HeaderView.swift */; };
+		F022E87427CD32A70036A59C /* APODView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022E87327CD32A70036A59C /* APODView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +28,11 @@
 		F022E85A27CA8EB50036A59C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		F022E86527CAC3A40036A59C /* APOD.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APOD.swift; sourceTree = "<group>"; };
 		F022E86727CAC4C70036A59C /* WebService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebService.swift; sourceTree = "<group>"; };
+		F022E86927CC07E40036A59C /* APODViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODViewModel.swift; sourceTree = "<group>"; };
+		F022E86C27CC08620036A59C /* Date+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extension.swift"; sourceTree = "<group>"; };
+		F022E86F27CC094A0036A59C /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		F022E87127CD32860036A59C /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		F022E87327CD32A70036A59C /* APODView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +65,8 @@
 		F022E85227CA8EB30036A59C /* APODiOS */ = {
 			isa = PBXGroup;
 			children = (
+				F022E86E27CC093F0036A59C /* Helpers */,
+				F022E86B27CC08500036A59C /* Extensions */,
 				F022E86427CAC3850036A59C /* App */,
 				F022E86327CAC3730036A59C /* View Models */,
 				F022E86227CAC36E0036A59C /* Views */,
@@ -85,6 +97,8 @@
 			isa = PBXGroup;
 			children = (
 				F022E85527CA8EB30036A59C /* ContentView.swift */,
+				F022E87127CD32860036A59C /* HeaderView.swift */,
+				F022E87327CD32A70036A59C /* APODView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -92,6 +106,7 @@
 		F022E86327CAC3730036A59C /* View Models */ = {
 			isa = PBXGroup;
 			children = (
+				F022E86927CC07E40036A59C /* APODViewModel.swift */,
 			);
 			path = "View Models";
 			sourceTree = "<group>";
@@ -103,6 +118,22 @@
 				F022E85727CA8EB50036A59C /* Assets.xcassets */,
 			);
 			path = App;
+			sourceTree = "<group>";
+		};
+		F022E86B27CC08500036A59C /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F022E86C27CC08620036A59C /* Date+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F022E86E27CC093F0036A59C /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				F022E86F27CC094A0036A59C /* Constants.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,10 +206,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F022E86A27CC07E40036A59C /* APODViewModel.swift in Sources */,
 				F022E85627CA8EB30036A59C /* ContentView.swift in Sources */,
 				F022E86627CAC3A40036A59C /* APOD.swift in Sources */,
 				F022E86827CAC4C70036A59C /* WebService.swift in Sources */,
+				F022E87427CD32A70036A59C /* APODView.swift in Sources */,
+				F022E87027CC094A0036A59C /* Constants.swift in Sources */,
 				F022E85427CA8EB30036A59C /* APODiOSApp.swift in Sources */,
+				F022E86D27CC08620036A59C /* Date+Extension.swift in Sources */,
+				F022E87227CD32860036A59C /* HeaderView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

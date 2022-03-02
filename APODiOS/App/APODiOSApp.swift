@@ -9,9 +9,13 @@ import SwiftUI
 
 @main
 struct APODiOSApp: App {
+    
+    @StateObject private var model = APODViewModel()
+    
     var body: some Scene {
         WindowGroup {
             ContentView()
+                .environmentObject(model)
         }
     }
 }
