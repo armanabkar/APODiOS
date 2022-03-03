@@ -9,7 +9,7 @@ import SwiftUI
 
 struct HeaderView: View {
     
-    @EnvironmentObject private var viewModel: APODViewModel
+    @EnvironmentObject private var viewModel: ContentViewModel
     
     var body: some View {
         Text(K.name)

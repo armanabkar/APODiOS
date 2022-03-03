@@ -13,6 +13,9 @@ struct K {
     static let description2 = "Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer."
     static let footer1 = "This open-source project is powered by NASA Astronomy Picture of the Day API."
     static let footer2 = "Designed and Developed by Arman Abkar"
+    static func baseURL(_ date: String) -> String {
+        return "https://api.nasa.gov/planetary/apod?date=\(date)&api_key=DEMO_KEY"
+    }
     
     static let placeholder1 = "Some default placeholder"
     static let placeholder2 = "No credit"

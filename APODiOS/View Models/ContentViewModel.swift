@@ -8,10 +8,30 @@
 import SwiftUI
 
 @MainActor
-final class APODViewModel: ObservableObject {
+final class ContentViewModel: ObservableObject {
     
     @Published var apod: APOD?
     @Published var selectedDate = Date()
+    
+    var title: String {
+        return apod?.title ?? K.placeholder1
+    }
+    
+    var copyright: String {
+        return apod?.copyright ?? K.placeholder2
+    }
+    
+    var explanation: String {
+        return apod?.explanation ?? K.placeholder3
+    }
+    
+    var url: String {
+        return apod?.url ?? ""
+    }
+    
+    var mediaType: String {
+        return apod?.media_type ?? ""
+    }
     
     var dateClosedRange: ClosedRange<Date> {
         let min = Date("1995/06/16")

@@ -9,7 +9,7 @@ import SwiftUI
 
 struct ContentView: View {
     
-    @EnvironmentObject private var viewModel: APODViewModel
+    @EnvironmentObject private var viewModel: ContentViewModel
     
     var body: some View {
         ZStack {
@@ -20,11 +20,11 @@ struct ContentView: View {
                 VStack(spacing: 15) {
                     HeaderView()
                     
-                    APODView(title: viewModel.apod?.title ?? K.placeholder1,
-                             copyright: viewModel.apod?.copyright ?? K.placeholder2,
-                             explanation: viewModel.apod?.explanation ?? K.placeholder3,
-                             url: viewModel.apod?.url ?? "",
-                             media_type: viewModel.apod?.media_type ?? "")
+                    APODView(title: viewModel.title,
+                             copyright: viewModel.copyright,
+                             explanation: viewModel.explanation,
+                             url: viewModel.url,
+                             media_type: viewModel.mediaType)
                         .redacted(reason: viewModel.apod == nil ? .placeholder : [])
                     
                     Text(K.footer1)
@@ -52,6 +52,6 @@ struct ContentView: View {
 struct ContentView_Previews: PreviewProvider {
     static var previews: some View {
         ContentView()
-            .environmentObject(APODViewModel())
+            .environmentObject(ContentViewModel())
     }
 }

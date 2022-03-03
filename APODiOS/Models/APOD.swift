@@ -8,9 +8,9 @@
 import Foundation
 
 struct APOD: Codable {
-    let title: String?
+    let title: String
     let copyright: String?
-    let explanation: String?
+    let explanation: String
     let media_type: String?
-    let url: String?
+    let url: String
 }
