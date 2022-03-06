@@ -12,20 +12,20 @@ struct HeaderView: View {
     @EnvironmentObject private var viewModel: ContentViewModel
     
     var body: some View {
-        Text(K.name)
+        Text(K.Information.name)
             .font(.title)
             .fontWeight(.bold)
-            .foregroundColor(Color(K.primary))
-        Text(K.description1)
+            .foregroundColor(Color(K.Color.primary))
+        Text(K.Information.description1)
             .fontWeight(.medium)
-        Text(K.description2)
-            .foregroundColor(Color(K.secondary))
+        Text(K.Information.description2)
+            .foregroundColor(Color(K.Color.secondary))
             .font(.caption)
         DatePicker("Select the day:",
                    selection: $viewModel.selectedDate,
                    in: viewModel.dateClosedRange,
                    displayedComponents: .date)
-            .foregroundColor(Color(K.secondary))
+            .foregroundColor(Color(K.Color.secondary))
             .preferredColorScheme(.dark)
             .disabled(viewModel.apod == nil ? true : false)
     }

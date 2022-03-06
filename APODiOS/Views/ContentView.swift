@@ -13,7 +13,7 @@ struct ContentView: View {
     
     var body: some View {
         ZStack {
-            Color(K.background)
+            Color(K.Color.background)
                 .ignoresSafeArea()
             
             ScrollView(showsIndicators: false) {
@@ -27,13 +27,13 @@ struct ContentView: View {
                              media_type: viewModel.mediaType)
                         .redacted(reason: viewModel.apod == nil ? .placeholder : [])
                     
-                    Text(K.footer1)
-                        .foregroundColor(Color(K.secondary))
+                    Text(K.Information.footer1)
+                        .foregroundColor(Color(K.Color.secondary))
                         .padding(.top)
-                    Text(K.footer2)
-                        .foregroundColor(Color(K.secondary))
+                    Text(K.Information.footer2)
+                        .foregroundColor(Color(K.Color.secondary))
                 }
-                .foregroundColor(Color(K.primary))
+                .foregroundColor(Color(K.Color.primary))
             }
             .multilineTextAlignment(.center)
             .padding()

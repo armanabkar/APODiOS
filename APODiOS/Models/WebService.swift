@@ -24,7 +24,7 @@ final class WebService: API {
     private var cache = NSCache<AnyObject, AnyObject>()
 
     func fetchAPOD(for date: String) async throws -> APOD {
-        guard let url = URL(string: K.baseURL(date)) else { throw NetworkError.badURL }
+        guard let url = URL(string: K.Information.baseURL(date)) else { throw NetworkError.badURL }
         
         let urlRequest = URLRequest(url: url)
         let (data, response) = try await URLSession.shared.data(for: urlRequest)

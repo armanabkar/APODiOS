@@ -14,15 +14,15 @@ final class ContentViewModel: ObservableObject {
     @Published var selectedDate = Date()
     
     var title: String {
-        return apod?.title ?? K.placeholder1
+        return apod?.title ?? K.Placeholder.title
     }
     
     var copyright: String {
-        return apod?.copyright ?? K.placeholder2
+        return apod?.copyright ?? K.Placeholder.copyright
     }
     
     var explanation: String {
-        return apod?.explanation ?? K.placeholder3
+        return apod?.explanation ?? K.Placeholder.explanation
     }
     
     var url: String {

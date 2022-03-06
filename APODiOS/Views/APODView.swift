@@ -19,7 +19,7 @@ struct APODView: View {
         VStack(spacing: 15) {
             if media_type == "video" {
                 Link(destination: URL(string: url)!) {
-                    Image(K.youtube)
+                    Image(K.Image.youtube)
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                         .frame(height: 100)
@@ -30,7 +30,7 @@ struct APODView: View {
                         .resizable()
                         .aspectRatio(contentMode: .fit)
                 } placeholder: {
-                    Color(K.primary)
+                    Color(K.Color.primary)
                         .opacity(0)
                         .frame(height: 350)
                 }
@@ -43,7 +43,7 @@ struct APODView: View {
                 .fontWeight(.semibold)
             Text(copyright)
                 .font(.callout)
-                .foregroundColor(Color(K.secondary))
+                .foregroundColor(Color(K.Color.secondary))
             Text(explanation)
         }
     }
@@ -51,9 +51,9 @@ struct APODView: View {
 
 struct APODView_Previews: PreviewProvider {
     static var previews: some View {
-        APODView(title: K.placeholder1,
-                 copyright: K.placeholder3,
-                 explanation: K.placeholder3,
+        APODView(title: K.Placeholder.title,
+                 copyright: K.Placeholder.copyright,
+                 explanation: K.Placeholder.explanation,
                  url: "https://commons.wikimedia.org/wiki/Category:Galaxies#/media/File:NGC_4414_(NASA-med).jpg",
                  media_type: "image")
             .previewLayout(.sizeThatFits)
