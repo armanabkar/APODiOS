@@ -30,7 +30,7 @@ struct ContentView: View {
                     Text(K.Information.footer1)
                         .foregroundColor(Color(K.Color.secondary))
                         .padding(.top)
-                    Text(K.Information.footer2)
+                    Text("\(K.Information.footer2) [Arman Abkar](https://armanabkar.ir)")
                         .foregroundColor(Color(K.Color.secondary))
                 }
                 .foregroundColor(Color(K.Color.primary))

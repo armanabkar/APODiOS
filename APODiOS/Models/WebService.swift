@@ -19,10 +19,9 @@ protocol API {
 
 final class WebService: API {
     
-    static let shared = WebService()
     private init() {}
-    private var cache = NSCache<AnyObject, AnyObject>()
-
+    static let shared = WebService()
+    
     func fetchAPOD(for date: String) async throws -> APOD {
         guard let url = URL(string: K.Information.baseURL(date)) else { throw NetworkError.badURL }
         
