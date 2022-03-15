@@ -32,10 +32,10 @@ struct APODView: View {
                 } placeholder: {
                     Color(K.Color.primary)
                         .opacity(0)
-                        .frame(height: 350)
+                        .frame(height: 300)
                 }
                 .cornerRadius(10)
-                .frame(height: 350)
+                .frame(height: 300)
             }
             
             Text(title)

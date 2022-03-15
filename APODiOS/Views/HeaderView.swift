@@ -30,3 +30,13 @@ struct HeaderView: View {
             .disabled(viewModel.apod == nil ? true : false)
     }
 }
+
+struct HeaderView_Previews: PreviewProvider {
+    static var previews: some View {
+        VStack(spacing: 15) {
+            HeaderView()
+                .environmentObject(ContentViewModel())
+                .previewLayout(.sizeThatFits)
+        }
+    }
+}

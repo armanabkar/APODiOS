@@ -30,7 +30,7 @@ final class ContentViewModel: ObservableObject {
     }
     
     var mediaType: String {
-        return apod?.media_type ?? ""
+        return apod?.media_type ?? "image"
     }
     
     var dateClosedRange: ClosedRange<Date> {
