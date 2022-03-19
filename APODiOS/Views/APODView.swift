@@ -54,8 +54,12 @@ struct APODView_Previews: PreviewProvider {
         APODView(title: K.Placeholder.title,
                  copyright: K.Placeholder.copyright,
                  explanation: K.Placeholder.explanation,
-                 url: "https://commons.wikimedia.org/wiki/Category:Galaxies#/media/File:NGC_4414_(NASA-med).jpg",
+                 url: "https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg?download",
                  media_type: "image")
             .previewLayout(.sizeThatFits)
+            .foregroundColor(Color(K.Color.primary))
+            .multilineTextAlignment(.center)
+            .padding()
+            .background(Color(K.Color.background))
     }
 }

@@ -10,7 +10,11 @@ import SwiftUI
 @main
 struct APODiOSApp: App {
     
-    @StateObject private var model = ContentViewModel()
+    @StateObject private var model: ContentViewModel
+    
+    init() {
+        self._model = StateObject(wrappedValue: ContentViewModel())
+    }
     
     var body: some Scene {
         WindowGroup {
