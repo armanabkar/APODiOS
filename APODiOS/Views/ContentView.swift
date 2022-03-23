@@ -20,6 +20,14 @@ struct ContentView: View {
                 VStack(spacing: 15) {
                     HeaderView()
                     
+                    DatePicker("Select the day:",
+                               selection: $viewModel.selectedDate,
+                               in: viewModel.dateClosedRange,
+                               displayedComponents: .date)
+                    .foregroundColor(Color(K.Color.secondary))
+                    .preferredColorScheme(.dark)
+                    .disabled(viewModel.apod == nil ? true : false)
+                    
                     APODView(title: viewModel.title,
                              copyright: viewModel.copyright,
                              explanation: viewModel.explanation,

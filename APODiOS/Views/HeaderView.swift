@@ -18,16 +18,13 @@ struct HeaderView: View {
             .foregroundColor(Color(K.Color.primary))
         Text(K.Information.description1)
             .fontWeight(.medium)
+        Divider()
+            .frame(height: 3)
+            .background(Color(K.Color.secondary))
+            .cornerRadius(12)
         Text(K.Information.description2)
             .foregroundColor(Color(K.Color.secondary))
             .font(.caption)
-        DatePicker("Select the day:",
-                   selection: $viewModel.selectedDate,
-                   in: viewModel.dateClosedRange,
-                   displayedComponents: .date)
-            .foregroundColor(Color(K.Color.secondary))
-            .preferredColorScheme(.dark)
-            .disabled(viewModel.apod == nil ? true : false)
     }
 }
 
@@ -35,8 +32,9 @@ struct HeaderView_Previews: PreviewProvider {
     static var previews: some View {
         VStack(spacing: 15) {
             HeaderView()
-                .environmentObject(ContentViewModel())
-                .previewLayout(.sizeThatFits)
         }
+        .previewLayout(.sizeThatFits)
+        .padding()
+        .environmentObject(ContentViewModel())
     }
 }

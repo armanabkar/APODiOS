@@ -36,14 +36,17 @@ struct APODView: View {
                 }
                 .cornerRadius(10)
                 .frame(height: 300)
+                .padding(.vertical, 5)
             }
             
             Text(title)
                 .font(.title2)
                 .fontWeight(.semibold)
-            Text(copyright)
-                .font(.callout)
-                .foregroundColor(Color(K.Color.secondary))
+            if copyright != K.Placeholder.copyright {
+                Text(copyright)
+                    .font(.callout)
+                    .foregroundColor(Color(K.Color.secondary))
+            }
             Text(explanation)
         }
     }
@@ -56,10 +59,10 @@ struct APODView_Previews: PreviewProvider {
                  explanation: K.Placeholder.explanation,
                  url: "https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg?download",
                  media_type: "image")
-            .previewLayout(.sizeThatFits)
-            .foregroundColor(Color(K.Color.primary))
-            .multilineTextAlignment(.center)
-            .padding()
-            .background(Color(K.Color.background))
+        .previewLayout(.sizeThatFits)
+        .foregroundColor(Color(K.Color.primary))
+        .multilineTextAlignment(.center)
+        .padding()
+        .background(Color(K.Color.background))
     }
 }
