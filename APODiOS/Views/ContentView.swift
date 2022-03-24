@@ -12,40 +12,45 @@ struct ContentView: View {
     @EnvironmentObject private var viewModel: ContentViewModel
     
     var body: some View {
-        ZStack {
-            Color(K.Color.background)
-                .ignoresSafeArea()
-            
-            ScrollView(showsIndicators: false) {
-                VStack(spacing: 15) {
-                    HeaderView()
-                    
-                    DatePicker("Select the day:",
-                               selection: $viewModel.selectedDate,
-                               in: viewModel.dateClosedRange,
-                               displayedComponents: .date)
-                    .foregroundColor(Color(K.Color.secondary))
-                    .preferredColorScheme(.dark)
-                    .disabled(viewModel.apod == nil ? true : false)
-                    
-                    APODView(title: viewModel.title,
-                             copyright: viewModel.copyright,
-                             explanation: viewModel.explanation,
-                             url: viewModel.url,
-                             media_type: viewModel.mediaType)
+        TabView {
+            ZStack {
+                Color(K.Color.background)
+                    .ignoresSafeArea()
+                
+                ScrollView(showsIndicators: false) {
+                    VStack(spacing: 15) {
+                        HeaderView()
+                        
+                        APODView(title: viewModel.title,
+                                 copyright: viewModel.copyright,
+                                 explanation: viewModel.explanation,
+                                 url: viewModel.url,
+                                 media_type: viewModel.mediaType)
                         .redacted(reason: viewModel.apod == nil ? .placeholder : [])
-                    
-                    Text(K.Information.footer1)
-                        .foregroundColor(Color(K.Color.secondary))
-                        .padding(.top)
-                    Text("\(K.Information.footer2) [Arman Abkar](https://armanabkar.ir)")
-                        .foregroundColor(Color(K.Color.secondary))
+                        
+                        Text(K.Information.footer1)
+                            .foregroundColor(Color(K.Color.secondary))
+                            .padding(.top)
+                        Text("\(K.Information.footer2) [Arman Abkar](https://armanabkar.ir)")
+                            .foregroundColor(Color(K.Color.secondary))
+                    }
+                    .foregroundColor(Color(K.Color.primary))
                 }
-                .foregroundColor(Color(K.Color.primary))
+                .multilineTextAlignment(.center)
+                .padding()
             }
-            .multilineTextAlignment(.center)
-            .padding()
+            .tabItem {
+                Image(systemName: "eye")
+                Text("Home")
+            }
+            
+            Text("Favorites")
+                .tabItem {
+                    Image(systemName: "star")
+                    Text("Favorites")
+                }
         }
+        .accentColor(.white)
         .task {
             await viewModel.fetchAPOD()
         }
