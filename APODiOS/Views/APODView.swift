@@ -42,11 +42,13 @@ struct APODView: View {
             Text(title)
                 .font(.title2)
                 .fontWeight(.semibold)
+            
             if copyright != K.Placeholder.copyright {
                 Text(copyright)
                     .font(.callout)
                     .foregroundColor(Color(K.Color.secondary))
             }
+            
             Text(explanation)
         }
     }
