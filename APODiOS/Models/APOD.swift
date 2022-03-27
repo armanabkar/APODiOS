@@ -13,4 +13,5 @@ struct APOD: Codable {
     let explanation: String
     let media_type: String?
     let url: String
+    let hdurl: String?
 }

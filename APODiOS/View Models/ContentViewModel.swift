@@ -29,6 +29,10 @@ final class ContentViewModel: ObservableObject {
         return apod?.url ?? ""
     }
     
+    var hdurl: String {
+        return apod?.hdurl ?? ""
+    }
+    
     var mediaType: String {
         return apod?.media_type ?? "image"
     }

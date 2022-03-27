@@ -13,6 +13,7 @@ struct APODView: View {
     var copyright: String
     var explanation: String
     var url: String
+    var hdurl: String
     var media_type: String
     
     var body: some View {
@@ -25,18 +26,21 @@ struct APODView: View {
                         .frame(height: 100)
                 }
             } else {
-                AsyncImage(url: URL(string: url)) { image in
-                    image
-                        .resizable()
-                        .aspectRatio(contentMode: .fit)
-                } placeholder: {
-                    Color(K.Color.primary)
-                        .opacity(0)
-                        .frame(height: 300)
+                Link(destination: (URL(string: hdurl) ?? URL(string: "https://armanabkar.ir"))!) {
+                    AsyncImage(url: URL(string: url)) { image in
+                        image
+                            .resizable()
+                            .aspectRatio(contentMode: .fit)
+                    } placeholder: {
+                        Color(K.Color.primary)
+                            .opacity(0)
+                            .frame(height: 300)
+                    }
+                    .cornerRadius(10)
+                    .frame(height: 300)
+                    .padding(.vertical, 5)
                 }
-                .cornerRadius(10)
-                .frame(height: 300)
-                .padding(.vertical, 5)
+                .disabled(title.isEmpty)
             }
             
             Text(title)
@@ -59,7 +63,8 @@ struct APODView_Previews: PreviewProvider {
         APODView(title: K.Placeholder.title,
                  copyright: K.Placeholder.copyright,
                  explanation: K.Placeholder.explanation,
-                 url: "https://upload.wikimedia.org/wikipedia/commons/c/c3/NGC_4414_%28NASA-med%29.jpg?download",
+                 url: "https://spaceholder.cc/1200x800",
+                 hdurl: "https://spaceholder.cc/1200x800",
                  media_type: "image")
         .previewLayout(.sizeThatFits)
         .foregroundColor(Color(K.Color.primary))

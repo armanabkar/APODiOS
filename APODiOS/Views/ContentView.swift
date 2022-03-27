@@ -24,6 +24,7 @@ struct ContentView: View {
                              copyright: viewModel.copyright,
                              explanation: viewModel.explanation,
                              url: viewModel.url,
+                             hdurl: viewModel.hdurl,
                              media_type: viewModel.mediaType)
                     .redacted(reason: viewModel.apod == nil ? .placeholder : [])
                     
