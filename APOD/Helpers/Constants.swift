@@ -12,8 +12,7 @@ struct K {
     struct Information {
         static let name = "Astronomy Picture of Day"
         static let description1 = "Discover the cosmos!"
-        static let description2 = "Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer."
-        static let footer1 = "This open-source project is powered by NASA Astronomy Picture of the Day API."
+        static let footer1 = "This project is powered by NASA Astronomy Picture of the Day API. Each day a different image or photograph of our fascinating universe is featured, along with a brief explanation written by a professional astronomer."
         static let footer2 = "Designed and Developed by"
         static let apiKey = "DEMO_KEY"
         static func baseURL(_ date: String) -> String {

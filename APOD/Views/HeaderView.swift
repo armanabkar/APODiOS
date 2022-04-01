@@ -18,10 +18,7 @@ struct HeaderView: View {
             .foregroundColor(Color(K.Color.primary))
         Text(K.Information.description1)
             .fontWeight(.medium)
-        Text(K.Information.description2)
-            .foregroundColor(Color(K.Color.secondary))
-            .font(.caption)
-        DatePicker("Select the day:",
+        DatePicker("Select the date:",
                    selection: $viewModel.selectedDate,
                    in: viewModel.dateClosedRange,
                    displayedComponents: .date)

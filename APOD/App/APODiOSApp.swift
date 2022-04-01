@@ -1,6 +1,6 @@
 //
-//  APODiOSApp.swift
-//  APODiOS
+//  APODApp.swift
+//  APOD
 //
 //  Created by Arman Abkar on 2/26/22.
 //
@@ -8,7 +8,7 @@
 import SwiftUI
 
 @main
-struct APODiOSApp: App {
+struct APODApp: App {
     
     @StateObject private var model: ContentViewModel
     

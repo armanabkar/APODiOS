@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  APODiOS
+//  APOD
 //
 //  Created by Arman Abkar on 2/26/22.
 //
