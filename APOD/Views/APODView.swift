@@ -26,14 +26,13 @@ struct APODView: View {
                         .frame(height: 100)
                 }
             } else {
-                Link(destination: (URL(string: hdurl) ?? URL(string: "https://armanabkar.ir"))!) {
+                Link(destination: (URL(string: hdurl) ?? URL(string: "https://www.google.com"))!) {
                     AsyncImage(url: URL(string: url)) { image in
                         image
                             .resizable()
                             .aspectRatio(contentMode: .fit)
                     } placeholder: {
-                        Color(K.Color.primary)
-                            .opacity(0)
+                        Text("")
                             .frame(height: 300)
                     }
                     .cornerRadius(10)

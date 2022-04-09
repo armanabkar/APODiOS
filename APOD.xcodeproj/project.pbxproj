@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		F022E85427CA8EB30036A59C /* APODiOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022E85327CA8EB30036A59C /* APODiOSApp.swift */; };
+		F022E85427CA8EB30036A59C /* APODApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022E85327CA8EB30036A59C /* APODApp.swift */; };
 		F022E85627CA8EB30036A59C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F022E85527CA8EB30036A59C /* ContentView.swift */; };
 		F022E85827CA8EB50036A59C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F022E85727CA8EB50036A59C /* Assets.xcassets */; };
 		F022E85B27CA8EB50036A59C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F022E85A27CA8EB50036A59C /* Preview Assets.xcassets */; };
@@ -23,7 +23,7 @@
 
 /* Begin PBXFileReference section */
 		F022E85027CA8EB30036A59C /* APOD.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APOD.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		F022E85327CA8EB30036A59C /* APODiOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODiOSApp.swift; sourceTree = "<group>"; };
+		F022E85327CA8EB30036A59C /* APODApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APODApp.swift; sourceTree = "<group>"; };
 		F022E85527CA8EB30036A59C /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F022E85727CA8EB50036A59C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F022E85A27CA8EB50036A59C /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
@@ -116,7 +116,7 @@
 		F022E86427CAC3850036A59C /* App */ = {
 			isa = PBXGroup;
 			children = (
-				F022E85327CA8EB30036A59C /* APODiOSApp.swift */,
+				F022E85327CA8EB30036A59C /* APODApp.swift */,
 				F022E85727CA8EB50036A59C /* Assets.xcassets */,
 				F022E87527E090BC0036A59C /* LaunchScreen.storyboard */,
 			);
@@ -216,7 +216,7 @@
 				F022E86827CAC4C70036A59C /* WebService.swift in Sources */,
 				F022E87427CD32A70036A59C /* APODView.swift in Sources */,
 				F022E87027CC094A0036A59C /* Constants.swift in Sources */,
-				F022E85427CA8EB30036A59C /* APODiOSApp.swift in Sources */,
+				F022E85427CA8EB30036A59C /* APODApp.swift in Sources */,
 				F022E86D27CC08620036A59C /* Date+Extension.swift in Sources */,
 				F022E87227CD32860036A59C /* HeaderView.swift in Sources */,
 			);

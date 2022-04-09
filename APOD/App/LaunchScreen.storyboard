@@ -20,8 +20,8 @@
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Developed by Arman Abkar" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bEs-9B-8ak">
-                                <rect key="frame" x="100.5" y="791" width="213" height="21"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <rect key="frame" x="99" y="826" width="216.5" height="21"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                 <color key="textColor" name="primary"/>
                                 <nil key="highlightedColor"/>
                             </label>
@@ -31,7 +31,7 @@
                         <color key="tintColor" name="primary"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Kve-7R-4GZ" secondAttribute="bottom" id="2ku-cd-ciQ"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bEs-9B-8ak" secondAttribute="bottom" constant="50" id="8eG-rl-DbG"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="bEs-9B-8ak" secondAttribute="bottom" constant="15" id="8eG-rl-DbG"/>
                             <constraint firstItem="Kve-7R-4GZ" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="CXv-48-RLK"/>
                             <constraint firstItem="Kve-7R-4GZ" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="OFq-26-X5f"/>
                             <constraint firstItem="bEs-9B-8ak" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="XBb-s9-sSs"/>
@@ -47,10 +47,10 @@
     <resources>
         <image name="logo" width="1170" height="2532"/>
         <namedColor name="background">
-            <color red="0.16099999845027924" green="0.21600000560283661" blue="0.25900000333786011" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.070588235294117646" green="0.12941176470588237" blue="0.25098039215686274" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="primary">
-            <color red="0.81999999284744263" green="0.88200002908706665" blue="0.88599997758865356" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
     </resources>
 </document>
