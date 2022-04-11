@@ -16,7 +16,7 @@ struct HeaderView: View {
             .font(.title)
             .fontWeight(.bold)
             .foregroundColor(Color(K.Color.primary))
-        Text(K.Information.description1)
+        Text(K.Information.description)
             .fontWeight(.medium)
             .font(.title3)
             .foregroundColor(Color(K.Color.primary))

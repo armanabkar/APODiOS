@@ -30,13 +30,12 @@ struct APODView: View {
                     AsyncImage(url: URL(string: url)) { image in
                         image
                             .resizable()
-                            .aspectRatio(contentMode: .fit)
+                            .aspectRatio(contentMode: .fill)
                     } placeholder: {
-                        Text("")
-                            .frame(height: 300)
+                        Color.white.opacity(0.25)
                     }
+                    .frame(width: 300, height: 300)
                     .cornerRadius(10)
-                    .frame(height: 300)
                     .padding(.vertical, 5)
                 }
                 .disabled(title.isEmpty)
