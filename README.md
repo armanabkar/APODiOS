@@ -16,3 +16,6 @@ Discover the cosmos! Each day a different image or photograph of our fascinating
 - [ ] Unit/Integration Tests
 - [ ] UI Tests
 
+### Contributing
+
+We appreciate your help!
